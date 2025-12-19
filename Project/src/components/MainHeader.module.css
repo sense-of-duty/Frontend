@@ -1,0 +1,146 @@
+.headerContainer {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.headerContent {
+    width: 95%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.logoImage {
+    width: 38px;
+    height: auto;
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.subTitle {
+    font-size: 11px;
+    color: #4285F4;
+    margin: 0;
+}
+
+.navSection {
+    height: 100%;
+}
+
+.navList {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navItem {
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    transition: color 0.2s ease;
+    padding: 0 5px;
+}
+
+.navItem:hover {
+    color: #4285F4;
+}
+
+.active {
+    color: #4285F4;
+    font-weight: 700;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #4285F4;
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notificationBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.notificationBtn:hover {
+    color: #000;
+}
+
+.userInfo {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.userName {
+    font-weight: 600;
+    color: #333;
+}
+
+.userDivider {
+    margin: 0 6px;
+    color: #ddd;
+}
+
+.userRole, .userMember {
+    color: #888;
+}
+
+.profileImage {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    object-fit: cover;
+    border: 1px solid #eee;
+    cursor: pointer;
+}

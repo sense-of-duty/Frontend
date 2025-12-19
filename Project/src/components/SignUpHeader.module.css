@@ -1,0 +1,30 @@
+
+.gdgoc {
+ 	width: 100%;
+ 	height: 60px;
+ 	position: relative;
+ 	
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	gap: 20px;
+
+	margin: 70px 0;
+ 	
+ 	text-align: center;
+ 	font-size: 36px;
+ 	color: #000;
+ 	font-family: 'Noto Sans';
+}
+
+.gdgoc2 {
+ 	position: relative;
+ 	flex-shrink: 0;
+}
+
+.logoImage {
+    width: 88px; 
+    height: auto;
+    flex-shrink: 0; 
+}
+

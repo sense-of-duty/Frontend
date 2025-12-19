@@ -1,0 +1,30 @@
+
+.submitButtonContainer {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #427bfe;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 23px 0px;
+    box-sizing: border-box; 
+    
+    text-align: center; 
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Noto Sans';
+
+    border: none;
+    cursor: pointer;
+}
+
+.div {
+    position: relative;
+    font-weight: 500;
+    flex-shrink: 0;
+}
