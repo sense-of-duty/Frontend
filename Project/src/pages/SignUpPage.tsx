@@ -82,7 +82,7 @@ const SignUpPage: FunctionComponent = () => {
             
             try {
                 await axios.post(API_URL, requestBody);
-                console.log(requestBody);
+                console.log("회원가입 요청 성공");
                 navigate(`/verify?email=${formData.email}`); 
                 
             } catch (err) {

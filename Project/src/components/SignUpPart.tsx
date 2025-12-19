@@ -1,5 +1,5 @@
 import type { FunctionComponent, ChangeEvent } from 'react';
-import styles from './SginUpPart.module.css';
+import styles from './SignUpPart.module.css';
 
 interface SignUpPartProps {
     value: string;
