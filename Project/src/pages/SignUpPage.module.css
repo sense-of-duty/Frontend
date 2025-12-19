@@ -1,0 +1,104 @@
+/* 1. 전체 배경: 브라우저 기본 여백 제거 및 화면 전체 점유 */
+.container {
+    /* 너비와 높이를 화면에 꽉 맞춤 */
+    width: 100%;
+    min-height: 100vh;
+    
+    /* 중앙 정렬을 위한 설정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* 상하좌우 정중앙 배치 */
+    
+    /* 폰트 설정 */
+    font-family: 'Noto Sans', sans-serif;
+    
+    /* 중요: 기존 absolute 스타일과의 충돌 방지 */
+    position: relative;
+    margin: 0;
+}
+
+/* 2. 상단 헤더 영역 */
+.headerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* 3. 흰색 회원가입 박스 (가운데 배치되는 흰 박스) */
+.signUpBox {
+    background-color: #ffffff;
+    border: 3px solid #cbcfd2;
+    border-radius: 20px;
+    
+    /* 박스 크기 조절 */
+    width: 100%;
+    max-width: 960px; /* 피그마 원본 너비 유지 */
+    padding: 60px 40px;
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* 입력 필드 사이의 간격 */
+    
+    /* 그림자 추가 (선택 사항: 박스를 더 돋보이게 함) */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 4. 입력 필드 공통 스타일 */
+.inputField {
+    width: 100%;
+    max-width: 700px; /* 입력란 너비 제한 */
+    height: 60px;
+    border-radius: 8px;
+    border: 2px solid #cbcfd2;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-size: 20px; /* 24px가 너무 크다면 20px 권장 */
+    color: #333a3d;
+    outline: none;
+}
+
+.inputField:focus {
+    border-color: #427bfe; /* 포커스 시 강조색 */
+}
+
+.inputField::placeholder {
+    color: #cbcfd2;
+}
+
+/* 5. 제출 버튼 */
+.submitButton {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    background-color: #427bfe;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #3563d1;
+}
+
+.submitButton:disabled {
+    background-color: #cbcfd2;
+    cursor: not-allowed;
+}
+
+/* 6. 에러 메시지 */
+.errorText {
+    color: #fe4542;
+    font-size: 15px;
+    margin: 5px 0;
+    font-weight: 500;
+}
