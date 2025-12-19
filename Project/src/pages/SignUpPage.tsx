@@ -125,7 +125,7 @@ const SignUpPage: FunctionComponent = () => {
                 {error && <p className={styles.errorText}>{error}</p>}
                 
                 <SignUpSubmit onSubmit={handleSubmit} disabled={isLoading}>
-                    {isLoading ? '요청 중...' : '인증 요청'}
+                    {isLoading ? '요청 중...' : '가입하기'}
                 </SignUpSubmit>
             </SignUpBox>
         </div>

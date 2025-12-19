@@ -5,7 +5,7 @@ import styles from './SignUpTitle.module.css';
 const SignUpTitle = () => {
   	return (
     		<div className={styles.parent}>
-      			<b className={styles.b}>입력필수</b>
+      			<b className={styles.b}>회원가입</b>
     		</div>);
 };
 
