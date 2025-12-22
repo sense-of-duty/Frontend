@@ -23,6 +23,10 @@
     cursor: pointer;
 }
 
+.submitButtonContainer:hover {
+  background-color: #3566d6;
+}
+
 .div {
     position: relative;
     font-weight: 500;

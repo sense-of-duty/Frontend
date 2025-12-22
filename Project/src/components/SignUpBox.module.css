@@ -1,18 +1,17 @@
-
 .rectangleDiv {
     width: 600px;
     max-width: 90%;
-
     border-radius: 40px;
     background-color: #fff;
-    border: 3px solid #cbcfd2;
+    border: 1px solid #e0e0e0;
     box-sizing: border-box;
-
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    padding: 30px 40px;
-    gap: 20px;
+
+    padding: 40px;
+    gap: 24px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
