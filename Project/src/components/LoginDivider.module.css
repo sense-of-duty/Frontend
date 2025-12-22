@@ -1,0 +1,21 @@
+.dividerContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #cbcfd2;
+  border: none;
+}
+
+.text {
+  padding: 0 16px;
+  color: #717578;
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+  white-space: nowrap;
+}

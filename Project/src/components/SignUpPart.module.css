@@ -1,0 +1,30 @@
+.SignUp {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid #cbcfd2;
+  box-sizing: border-box;
+  padding: 0 30px;
+  font-size: 24px;
+  color: #333; 
+  font-family: 'Noto Sans', sans-serif;
+  outline: none;
+  
+
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23cbcfd2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>") no-repeat right 20px center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.placeholderColor {
+  color: #cbcfd2 !important;
+}
+
+.optionText {
+  color: #333;
+}
+
+.SignUp:focus {
+  border-color: #427bfe;
+}

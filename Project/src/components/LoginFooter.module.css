@@ -1,0 +1,31 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 32px;
+  padding-bottom: 20px;
+}
+
+.infoText {
+  font-size: 14px;
+  color: #717578;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.signupButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: #427bfe;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.signupButton:hover {
+  text-decoration: underline;
+}
