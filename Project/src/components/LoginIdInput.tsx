@@ -14,7 +14,7 @@ const LoginIdInput: FunctionComponent<LoginIdInputProps> = ({ value, onChange })
       </label>
       <input
         id="user-id"
-        type="text"
+        type="email"
         placeholder="아이디"
         className={styles.inputField}
         value={value}
