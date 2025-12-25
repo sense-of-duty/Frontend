@@ -13,9 +13,7 @@ import SignUpContact from '../components/SignUpContact';
 import SignUpPart from '../components/SignUpPart';
 import SignUpSubmit from '../components/SignUpSubmit';
 import styles from './SignUpPage.module.css';
-const baseURL = import.meta.env.VITE_API_BASE_URL;
-
-const API_URL = `${baseURL}/auth/signup`;
+import { signUp, } from "../api";
 
 interface FormState {
     name: string;
@@ -74,14 +72,14 @@ const SignUpPage: FunctionComponent = () => {
                 confirmPassword: formData.confirmPassword,
                 name: formData.name,
                 phone: formData.phone,
-                partType: formData.partType,
+                partType: formData.partType as "WEB" | "BACKEND" | "DESIGN" | "PM" | "MOBILE" | "ORGANIZER",
             };
 
             setIsLoading(true);
             setError(null);
             
             try {
-                await axios.post(API_URL, requestBody);
+                await signUp(requestBody);
                 console.log("회원가입 요청 성공");
                 navigate(`/verify?email=${formData.email}`); 
                 
