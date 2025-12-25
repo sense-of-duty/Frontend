@@ -13,7 +13,7 @@ import SignUpContact from '../components/SignUpContact';
 import SignUpPart from '../components/SignUpPart';
 import SignUpSubmit from '../components/SignUpSubmit';
 import styles from './SignUpPage.module.css';
-const baseURL = import.meta.env.VITE_API_URL;
+const baseURL = import.meta.env.VITE_API_BASE_URL;
 
 const API_URL = `${baseURL}/auth/signup`;
 
