@@ -40,7 +40,7 @@ const LoginPage: FunctionComponent = () => {
             localStorage.setItem('user', JSON.stringify(user));
 
             console.log('로그인 성공:', user.name);
-            navigate('/home');
+            navigate('/');
         } catch (error) {
     console.error('로그인 실패:', error);
 

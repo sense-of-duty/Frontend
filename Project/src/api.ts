@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 // ============ Interfaces ============
 
 export interface User {
@@ -32,7 +33,7 @@ export interface SignUpRequest {
   confirmPassword: string;
   name: string;
   phone: string;
-  partType: "WEB" | "SERVER" | "DESIGN" | "PM";
+  partType: "WEB" | "BACKEND" | "DESIGN" | "PM" | "MOBILE" | "ORGANIZER",
 }
 
 export interface SignUpResponse {
@@ -41,7 +42,7 @@ export interface SignUpResponse {
 
 // ============ Axios Instance ============
 
-const api = axios.create({
+export const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
@@ -101,4 +102,3 @@ export const createMember = (data: {
   return api.post("/member", data);
 };
 
-export default api;
