@@ -54,7 +54,7 @@ const LoginPage: FunctionComponent = () => {
         } else if (error.response?.status === 401) {
             alert('아이디 또는 비밀번호를 확인해주세요.');
         } else if (error.response?.status === 403) {
-            alert('승인 대기 중인 계정입니다.');
+            alert('승인대기 중인 계정입니다.');
         } else {
             alert(serverMessage || '로그인 중 오류가 발생했습니다.');
         }

@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 // ============ Interfaces ============
 
 export interface User {
@@ -33,7 +32,7 @@ export interface SignUpRequest {
   confirmPassword: string;
   name: string;
   phone: string;
-  partType: "WEB" | "BACKEND" | "DESIGN" | "PM" | "MOBILE" | "ORGANIZER",
+  partType: "WEB" | "BACKEND" | "DESIGN" | "PM" | "MOBILE" | "ORGANIZER";
 }
 
 export interface SignUpResponse {
@@ -70,6 +69,8 @@ export const signUp = (data: SignUpRequest) => {
   return api.post<SignUpResponse>("/auth/signup", data);
 };
 
+// googleLogin 함수 삭제됨 (POST 요청 불필요)
+
 export const verifyEmail = (token: string) => {
   return api.get("/auth/verify-email", { params: { token } });
 };
@@ -101,4 +102,3 @@ export const createMember = (data: {
 }) => {
   return api.post("/member", data);
 };
-
